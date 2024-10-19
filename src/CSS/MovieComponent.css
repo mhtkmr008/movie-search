@@ -1,0 +1,86 @@
+.movie-component {
+    max-width: 600px; /* Set a maximum width for the component */
+    margin: 20px auto; /* Center the component */
+    padding: 20px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+h1 {
+    text-align: center; /* Center the title */
+    color: #333; /* Dark color for text */
+}
+
+.search-form {
+    display: flex; /* Use flexbox for form layout */
+    justify-content: space-between; /* Space between input and button */
+    margin-bottom: 20px; /* Space below the form */
+}
+
+.search-input {
+    flex: 1; /* Allow input to grow */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.search-button {
+    padding: 10px 15px; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.search-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.movie-list {
+    margin-top: 20px; /* Space above the list */
+}
+
+.movie-item {
+    display: flex; /* Use flexbox for movie item layout */
+    justify-content: space-between; /* Space between title and button */
+    align-items: center; /* Center vertically */
+    padding: 10px; /* Add padding */
+    border-bottom: 1px solid #ddd; /* Separator line */
+}
+
+.movie-title {
+    color: #333; /* Dark color for text */
+    font-size: 1.1em; /* Slightly larger font size */
+}
+
+.details-button {
+    padding: 5px 10px; /* Padding for movie detail button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.details-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.movie-details {
+    margin-top: 20px; /* Space above details */
+    border-top: 1px solid #ddd; /* Top border for separation */
+    padding-top: 10px; /* Padding at the top */
+}
+
+.movie-details h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em; /* Increase font size */
+    color: #333; /* Dark color for text */
+}
+
+.movie-details p {
+    margin: 5px 0; /* Margin between paragraphs */
+}
