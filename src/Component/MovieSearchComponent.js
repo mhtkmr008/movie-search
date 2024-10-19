@@ -62,6 +62,15 @@ const MovieSearchComponent=()=>{
                 <button type="submit">Search</button>
             </form>
 
+            {selectedMovieData && (
+                <div className="movie-details">
+                    <h2>{selectedMovieData.Title} ({selectedMovieData.Year})</h2>
+                    <p><strong>Director:</strong> {selectedMovieData.Director}</p>
+                    <p><strong>Actors:</strong> {selectedMovieData.Actors}</p>
+                    <p><strong>Plot:</strong> {selectedMovieData.Plot}</p>
+                </div>
+            )}
+
             {movieList.length > 0 && (
                 <div className="movie-list">
                     <h2>Search Results:</h2>
@@ -78,14 +87,7 @@ const MovieSearchComponent=()=>{
                 </div>
             )}
 
-{selectedMovieData && (
-                <div className="movie-details">
-                    <h2>{selectedMovieData.Title} ({selectedMovieData.Year})</h2>
-                    <p><strong>Director:</strong> {selectedMovieData.Director}</p>
-                    <p><strong>Actors:</strong> {selectedMovieData.Actors}</p>
-                    <p><strong>Plot:</strong> {selectedMovieData.Plot}</p>
-                </div>
-            )}
+
         </div>
     );
 };
