@@ -5,7 +5,7 @@ const API_KEY='c4e5c48f';
 const MovieService={
     async searchMovies(name)
     {
-        const url=`http://www.omdbapi.com/?s=${name}&apikey=${API_KEY}`;
+        const url=`https://www.omdbapi.com/?s=${name}&apikey=${API_KEY}`;
         try{
             const response=await axios.get(url);
             return response.data;
@@ -17,7 +17,7 @@ const MovieService={
 
     async getMovieDetails(imdbID)
     {
-        const url=`http://www.omdbapi.com/?i=${imdbID}&apikey=${API_KEY}`;
+        const url=`https://www.omdbapi.com/?i=${imdbID}&apikey=${API_KEY}`;
         try{
             const response =await axios.get(url);
             return response.data;
